@@ -1,15 +1,20 @@
 {
     "author": "jacob.rusch@gmail.com",
-    "dependencies": {},
+    "dependencies": {
+        "pebble-clay": "^1.0.3"
+    },
     "keywords": [],
     "name": "aggie-analog",
     "pebble": {
         "capabilities": [
-            "location"
+            "location",
+            "configurable"
         ],
         "displayName": "Aggie Analog",
         "enableMultiJS": true,
         "messageKeys": [
+            "KEY_INVERT_COLORS",
+            "KEY_INVERT_HAND_COLORS",
             "KEY_TEMP",
             "KEY_ICON"
         ],
@@ -17,8 +22,62 @@
         "resources": {
             "media": [
                 {
-                    "file": "images/LOGO_WHITE.png",
-                    "name": "LOGO_WHITE",
+                    "file": "images/PARTLY_CLOUDY_NIGHT_WHITE_ICON.png",
+                    "name": "PARTLY_CLOUDY_NIGHT_WHITE_ICON",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/WIND_WHITE_ICON.png",
+                    "name": "WIND_WHITE_ICON",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/SNOW_WHITE_ICON.png",
+                    "name": "SNOW_WHITE_ICON",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/SLEET_WHITE_ICON.png",
+                    "name": "SLEET_WHITE_ICON",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/RAIN_WHITE_ICON.png",
+                    "name": "RAIN_WHITE_ICON",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/FOG_WHITE_ICON.png",
+                    "name": "FOG_WHITE_ICON",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/CLOUDY_WHITE_ICON.png",
+                    "name": "CLOUDY_WHITE_ICON",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/CLEAR_SKY_NIGHT_WHITE_ICON.png",
+                    "name": "CLEAR_SKY_NIGHT_WHITE_ICON",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/CLEAR_SKY_DAY_WHITE_ICON.png",
+                    "name": "CLEAR_SKY_DAY_WHITE_ICON",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/PARTLY_CLOUDY_DAY_WHITE_ICON.png",
+                    "name": "PARTLY_CLOUDY_DAY_WHITE_ICON",
                     "targetPlatforms": null,
                     "type": "bitmap"
                 },
@@ -66,6 +125,12 @@
                     "type": "bitmap"
                 },
                 {
+                    "file": "images/LOGO_WHITE.png",
+                    "name": "LOGO_WHITE",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
                     "file": "images/LOGO_BLACK.png",
                     "name": "LOGO_BLACK",
                     "targetPlatforms": null,
@@ -109,7 +174,7 @@
             "basalt",
             "diorite"
         ],
-        "uuid": "662fd893-d537-49c5-9f48-39fc3a475f3d",
+        "uuid": "93d89edb-91ad-42a4-83a1-76c3b30c68ba",
         "watchapp": {
             "watchface": true
         }

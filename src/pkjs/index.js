@@ -1,3 +1,7 @@
+var Clay = require('pebble-clay');
+var clayConfig = require('./config');
+var clay = new Clay(clayConfig);
+
 var myAPIKey = '';
 
 var xhrRequest = function (url, type, callback) {
@@ -20,7 +24,7 @@ function locationSuccess(pos) {
       
       // round temperature
       var curTemp = Math.round(json.currently.temperature);
-      console.log("Temperature is " + curTemp);
+      console.log("Temperature in Fahrenheit is " + curTemp);
       
       // icon for weather condition
       var icon = json.currently.icon;
